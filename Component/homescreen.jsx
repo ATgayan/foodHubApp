@@ -8,7 +8,7 @@ import ManageOderCom from "./HomeScreenCom/ManageOrder";
 import Footer from "./HomeScreenCom/Footer";
 
 
-const HomeScreen=()=>{
+const HomeScreen=({navigation})=>{
 
     return(
 
@@ -17,7 +17,7 @@ const HomeScreen=()=>{
              <Banner></Banner>
              <OderStateCom></OderStateCom>
              <ManageOderCom></ManageOderCom>
-             <Footer></Footer>
+             <Footer navigation={navigation}></Footer>
         </SafeAreaView>
     )
 };
@@ -28,7 +28,6 @@ const styles=StyleSheet.create({
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
-        paddingTop: 30,
         width: "100%",
         height: "100%",
         backgroundColor: "#EAEEED",

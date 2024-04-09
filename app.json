@@ -11,6 +11,9 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "experiments": {
+      "typedRoutes": true
+    },
     "assetBundlePatterns": [
       "**/*"
     ],
@@ -24,7 +27,12 @@
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/favicon.png",
+      
+    },
+    "plugins": [
+      "expo-router"
+    ]
+   
   }
 }
