@@ -15,8 +15,8 @@ const HomeScreen=({navigation})=>{
         <SafeAreaView style={styles.view}>
              <Navbar></Navbar>
              <Banner></Banner>
-             <OderStateCom></OderStateCom>
-             <ManageOderCom></ManageOderCom>
+             <OderStateCom navigation={navigation}></OderStateCom>
+             <ManageOderCom navigation={navigation}></ManageOderCom>
              <Footer navigation={navigation}></Footer>
         </SafeAreaView>
     )

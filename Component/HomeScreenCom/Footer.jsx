@@ -9,7 +9,7 @@ const Footer = ({navigation}) => {
 
     <View style={FooterStyle.Footer}>
       
-        <Pressable style={FooterStyle.btn} onPress={() => navigation.navigate('/')}>
+        <Pressable style={FooterStyle.btn} onPress={() => navigation.navigate('Home')}>
           <AntDesign name="home" size={30} color="black" />
           <Text>HOME</Text>
         </Pressable>

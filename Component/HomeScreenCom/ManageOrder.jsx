@@ -4,20 +4,20 @@ import { View, Text, StyleSheet, SafeAreaView, Pressable, TouchableOpacity  } fr
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 
-const ManageOderCom=()=>{
+const ManageOderCom=({navigation})=>{
 
     return(
 
         <View style={ManageOderStyle.ManageOrder}>
         <Text style={ManageOderStyle.OderStatetext}>Manage order</Text>
         <View style={ManageOderStyle.OderButtonSet}>
-            <TouchableOpacity style={ManageOderStyle.btn}>
+            <TouchableOpacity style={ManageOderStyle.btn} onPress={()=>navigation.navigate('Order History')}>
                 <View style={ManageOderStyle.btndetails}>
                    <MaterialCommunityIcons name="history" size={30} color="black" />
                    <Text style={ManageOderStyle.BtnText}>Order history</Text>
                 </View> 
             </TouchableOpacity>
-            <TouchableOpacity style={ManageOderStyle.btn}>
+            <TouchableOpacity style={ManageOderStyle.btn} onPress={()=>navigation.navigate('Order State')}>
             <View style={ManageOderStyle.btndetails}>
                    <MaterialCommunityIcons name="file-find-outline" size={30} color="black" />
                    <Text style={ManageOderStyle.BtnText}>Order Status</Text>
