@@ -1,21 +1,20 @@
 import React from "react";
 import { View, Text, StyleSheet,  TouchableOpacity } from "react-native";
-
 import { Entypo,AntDesign } from '@expo/vector-icons';
 
-const OderStateCom = () => {
+const OderStateCom = ({navigation}) => {
   return (
     <View style={OderStateStyle.OderState}>
       <Text style={OderStateStyle.OderStatetext}>Order State</Text>
       <View style={OderStateStyle.OderStateButtonset}>
         <View style={OderStateStyle.OderButtonSet}>
-            <TouchableOpacity style={OderStateStyle.btn}>
+            <TouchableOpacity style={OderStateStyle.btn} onPress={() => navigation.navigate('Pending Order')}>
                 <View style={OderStateStyle.btndetails}>
                    <Entypo name="circular-graph" size={30} color="black" />
                    <Text style={OderStateStyle.BtnText}>Pending Order</Text>
                 </View> 
             </TouchableOpacity>
-            <TouchableOpacity style={OderStateStyle.btn}>
+            <TouchableOpacity style={OderStateStyle.btn} onPress={()=>navigation.navigate('Accept Order')}>
             <View style={OderStateStyle.btndetails}>
                    <AntDesign name="checkcircleo" size={30} color="black" />
                    <Text style={OderStateStyle.BtnText}>Accept Order</Text>
@@ -23,13 +22,13 @@ const OderStateCom = () => {
             </TouchableOpacity>
         </View>
         <View style={OderStateStyle.OderButtonSet}>
-            <TouchableOpacity style={OderStateStyle.btn}>
+            <TouchableOpacity style={OderStateStyle.btn} onPress={()=>navigation.navigate('Complite Order')}>
             <View style={OderStateStyle.btndetails}>
                    <AntDesign name="carryout" size={30} color="black" />
                    <Text style={OderStateStyle.BtnText}>Compleat order</Text>
                 </View>
             </TouchableOpacity>
-            <TouchableOpacity style={OderStateStyle.btn}>
+            <TouchableOpacity style={OderStateStyle.btn} onPress={()=>navigation.navigate('Reject Order')}>
             <View style={OderStateStyle.btndetails}>
                    <AntDesign name="closesquareo" size={30} color="black" />
                    <Text style={OderStateStyle.BtnText}>Reject Order</Text>

@@ -22,21 +22,24 @@ const Navbar = () => {
 const styles = StyleSheet.create({
   
   Nav: {
+    marginTop:30,
     flexDirection: "row",
     justifyContent: "space-between",
     width: "100%",
     height: 60,
+    backgroundColor:'white',
     borderBottomLeftRadius: 10,
     borderBottomRightRadius: 10,
     shadowColor: "#000",
     padding:15,
     shadowOffset: {
       width: 0,
-      height: 2,
+      height: 1,
     },
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
     elevation: 5,
+    
   },
  
   hedingtext: {
