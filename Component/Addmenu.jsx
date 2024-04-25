@@ -110,8 +110,9 @@ const Addmenustyle=StyleSheet.create({
 
   QTYStyle:{
     borderWidth:1,
-    width:50,
+    width:70,
     height:40,
+    padding:10,
     borderColor:'#dbdddc',
     textAlign:'center',
     borderRadius:10

@@ -4,18 +4,14 @@ import { View, Text, StyleSheet, SafeAreaView, Pressable } from "react-native";
 import { Ionicons, AntDesign } from "@expo/vector-icons";
 
 const Navbar = () => {
-     
-  return (   
-    <View>
-      
+  return (    
+    <View>  
         <View style={styles.Nav}>
           <Ionicons name="menu" color={"balck"} size={25}></Ionicons>
-          <Text style={styles.hedingtext}>ABC Shop  <AntDesign name="down" size={15}></AntDesign></Text>
+          <Text style={styles.hedingtext} >ABC Shop  <AntDesign name="down" size={15}></AntDesign></Text>
           <View style={styles.profilephoto}></View>
-        </View>
-    
+        </View>  
     </View>
-
   );
 };
 
