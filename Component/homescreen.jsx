@@ -9,8 +9,8 @@ import Footer from "./HomeScreenCom/Footer";
 
 const HomeScreen = ({ navigation }) => {
   return (
-    <SafeAreaView style={styles.view}>
-      <Navbar></Navbar>
+     <SafeAreaView style={styles.view}>
+     <Navbar></Navbar>
       <Banner></Banner>
       <OderStateCom navigation={navigation}></OderStateCom>
       <ManageOderCom navigation={navigation}></ManageOderCom>

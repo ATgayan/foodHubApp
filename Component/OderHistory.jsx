@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import { color } from 'react-native-tailwindcss';
 
 const OrderHistory = () => {
   return (
@@ -18,7 +19,11 @@ const OrderHistory = () => {
           <Text style={styles.headercell}>Status</Text>
         </View>
       </View>
+      
       <View style={styles.tableRow}>
+        <View style={styles.tableCell}>
+          <Text style={styles.cellText}>2634</Text>
+        </View>
         <View style={styles.tableCell}>
           <Text style={styles.cellText}>John</Text>
         </View>
@@ -26,10 +31,13 @@ const OrderHistory = () => {
           <Text style={styles.cellText}>30</Text>
         </View>
         <View style={styles.tableCell}>
-          <Text style={styles.cellText}>New York</Text>
+          <Text style={styles.cellText}>Compleate</Text>
         </View>
       </View>
       <View style={styles.tableRow}>
+        <View style={styles.tableCell}>
+          <Text style={styles.cellText}>4562</Text>
+        </View>
         <View style={styles.tableCell}>
           <Text style={styles.cellText}>Alice</Text>
         </View>
@@ -37,7 +45,7 @@ const OrderHistory = () => {
           <Text style={styles.cellText}>25</Text>
         </View>
         <View style={styles.tableCell}>
-          <Text style={styles.cellText}>Los Angeles</Text>
+          <Text style={styles.cellText}>Reject</Text>
         </View>
       </View>
     </View>
@@ -61,13 +69,18 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#f8f5f5',
     padding: 10,
+    width:30
   },
   cellText: {
     textAlign: 'center',
+    fontSize:7
   },
   headercell:{
     textAlign:'center',
-    fontWeight:'800'
+    fontWeight:'800',
+    fontSize:10
+    
+    
   }
 });
 
