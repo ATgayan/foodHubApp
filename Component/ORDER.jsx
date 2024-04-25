@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { View, Text, StyleSheet, SafeAreaView, Pressable, Modal, TouchableOpacity } from "react-native";
 
+import Footer from './HomeScreenCom/Footer';
+
 const Order = () => {
   const [modalVisible, setModalVisible] = useState(false);
 
@@ -11,6 +13,7 @@ const Order = () => {
           <View style={styles.orderW1}></View>
           <View style={styles.orderW2}></View>
         </View>
+        
       </Pressable>
       <Modal
         animationType="slide"
@@ -31,6 +34,7 @@ const Order = () => {
           </View>
         </TouchableOpacity>
       </Modal>
+      
     </SafeAreaView>
   );
 }
@@ -47,6 +51,10 @@ const styles = StyleSheet.create({
     height: "100%",
     backgroundColor: "#EAEEED",
     
+  },
+  footer:{
+    width:20,
+    height:30
   },
   footitem:{
     height:'20%',
